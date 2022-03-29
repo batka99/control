@@ -42,7 +42,7 @@ function Header() {
         firebase.database().ref(`data/FXXvUataYhbhVpWyu8oBnmA7EMx1/${a.id}`).update({vending:"off"})
     }
     const updateStock = (a) =>{
-        firebase.database().ref(`data/FXXvUataYhbhVpWyu8oBnmA7EMx1/${a.id}`).update({stock: inputValue}).then((response) => {
+        firebase.database().ref(`data/FXXvUataYhbhVpWyu8oBnmA7EMx1/${a.id}`).update({stock: parseInt(inputValue)}).then((response) => {
             alert("Амжилттай")
         })
     }
